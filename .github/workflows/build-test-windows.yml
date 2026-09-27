@@ -60,7 +60,7 @@ jobs:
         .\build-msvc-x64\tests\nvapi64-tests.exe [@unit-tests]
         .\build-msvc-x64\tests\nvofapi64-tests.exe [@unit-tests]
 
-    - name: Build MSVC ARM64EC
+    - name: Build MSVC arm64ec
       shell: pwsh
       run: |
         & "${Env:COMSPEC}" /s /c "`"${Env:VSDEVCMD}`" -arch=arm64 -host_arch=x64 -no_logo && set" `
